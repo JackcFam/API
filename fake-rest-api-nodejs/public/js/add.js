@@ -1,6 +1,6 @@
 function createUser() {
     $.ajax({
-        url: "http://localhost:3000/users",
+        url: "https://techmaster-student.herokuapp.com/users",
         method: "POST",
         data: {
             name: $('#name').val(),

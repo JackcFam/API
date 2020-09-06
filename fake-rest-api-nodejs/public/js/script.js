@@ -1,6 +1,6 @@
 $(function () {
   $.ajax({
-    url: "http://localhost:3000/users",
+    url: "https://techmaster-student.herokuapp.com/users",
   }).done(function (users) {
     let htmlString = "";
     // Dùng vòng lặp for of
@@ -40,7 +40,7 @@ function confirmDelete(id) {
 
 function deleteStudent() {
   $.ajax({
-      url: "http://localhost:3000/users/" + studentId,
+      url: "https://techmaster-student.herokuapp.com/users/" + studentId,
       method: "DELETE"
     })
     .done(function (result) {

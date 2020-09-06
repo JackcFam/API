@@ -4,7 +4,7 @@ function getIdQueryParam() {
 }
 const userid = getIdQueryParam();
 console.log(userid);
-let http = "http://localhost:3000/users";
+let http = "https://techmaster-student.herokuapp.com/users";
 $(function () {
     $.ajax({
         url: http + "/" + userid,
@@ -34,7 +34,7 @@ function repairInfo() {
 
 function updateUser() {
     $.ajax({
-        url: "http://localhost:3000/users" + '/' + userid,
+        url: "https://techmaster-student.herokuapp.com/users" + '/' + userid,
         method: "PUT",
         data: {
             name: $('#name').val(),
